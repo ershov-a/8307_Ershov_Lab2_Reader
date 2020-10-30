@@ -10,7 +10,7 @@ int main() {
         std::cout << "*** Mapping was opened successfully ***" << std::endl;
     }
 
-
+    // Получаем стартовый адрес региона
     PVOID mapAddress = MapViewOfFile(fileHandle, FILE_MAP_ALL_ACCESS, 0, 0, 0);
     if (mapAddress == nullptr){
         std::cerr << "*** Can not open MapView of file ***" << std::endl;
